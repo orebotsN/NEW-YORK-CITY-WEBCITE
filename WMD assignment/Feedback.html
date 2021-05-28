@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <link rel="stylesheet" href="mystyle.css">
+        <meta charset="utf-8">
+        <title>Feedback</title>
+            
+        <script type="text/javascript">
+
+    
+            function validate()
+            {
+                if (document.feedback.fname.value=="")
+                {
+                alert ("Please provide your First Name:");
+                document.feedback.fname.focus();
+                return false;
+                }
+                
+                if (document.feedback.lname.value=="")
+                {
+                alert ("Please provide your Last Name:");
+                document.feedback.lname.focus();
+                return false;
+                }
+                if(document.feedback.email.value==""){
+                    alert ("Please enter your email");
+                    document.feedback.email.focus();
+                    return false;
+                }
+            }
+                    
+        </script>
+    </head>
+
+    <body>
+        <div class="nav">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="About us.html">About us</a>
+                <a href="Events.html">Events</a>
+                <a href="Connect with us.html">Contact with us</a>
+                <a href="Feedback.html">Feedback</a>
+
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <h1>Feedback Form</h1>
+            <p>Want free updates on what's happening in the city?Subscribe below and stay engaged with us.
+
+            </p>
+        
+          <form action="Thank you.html" name="feedback" onsubmit="return(validate());">
+              <label for="fname"> First name: </label> <br>
+              <input type="text" id="fname" name="fname" > <br>
+                  <label for="lname"> Last name: </label> <br>
+                  <input type="text" id="lname" name="lname" > <br><br>
+                  <label for="email"> Email: </label> <br>
+              <input type="text" id="email" name="email" ><br><br>
+              <input type="submit" value="submit">
+          </form>
+        </div>
+        
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            
+    <div class="footer">
+        <p>
+            Copy right @ 2021 
+            <a href="www.facebook.com">
+                <img src= "images/facebook icon.png" alt= "facebook icon" width= 50; height= 30;/>
+            </a>
+            <a href="www.twitter.com">
+            <img src= "images/twitter icon.png" alt= "twitter icon" width= 50; height= 30;/>
+            </a>
+            <a href="www.instagram.com">
+            <img src= "images/instagram icon.png" alt= "instagram icon" width= 50; height= 30;/>
+            </a>
+        </p>
+    </div>
+    </body>
+</html>

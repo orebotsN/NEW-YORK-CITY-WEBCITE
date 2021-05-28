@@ -1,0 +1,106 @@
+/*box model for the web pages*/
+html {
+  box-sizing:border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{font-family:Arial, Helvetica, sans-serif;
+}
+body{
+padding: 2px;
+
+}
+
+/* Navbar container */
+.nav {
+    overflow: hidden;
+    background-color:  #f6fa06;
+  }
+  
+  /* Links inside the navbar */
+  .nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /*Changing the colour of the the links when you hover over them*/
+  .nav a:hover{
+    background-color:black;
+    color: #f6fa06;
+    
+  }
+  /*chnaging the colour of the links when they are active*/
+  .nav a:active{
+    background-color: white ;
+
+  }
+  /*positining a paragraph next to an image in the About us page*/
+ div.container {
+    margin-left: 350px;
+    margin-top: -218px;
+}
+
+p.styler {
+    margin-left: inherit;
+}
+/*positining the second paragraph after the fact in the About us page*/
+div.containerTwo {
+margin-left: 0px;
+margin-top: 37px;
+}
+p.stylerTwo {
+margin-left: inherit;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #f6fa06;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Colour the footer*/
+.footer {
+  overflow: hidden;
+  background-color:  #f6fa06;
+}
+/*postion the footer*/
+.footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  
+  background-color:#f6fa06;
+}
+
